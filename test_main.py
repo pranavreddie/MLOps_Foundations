@@ -1,6 +1,7 @@
 # test_main.py
 from sklearn.linear_model import LinearRegression
 
+
 def test_model():
     X = [[1], [2], [3]]
     y = [1, 2, 3]
