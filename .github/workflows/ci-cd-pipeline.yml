@@ -3,10 +3,10 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - "*"
+      - "*"  # Trigger for any branch
   pull_request:
     branches:
-      - "*"
+      - "*"  # Trigger for any pull request
 
 jobs:
   lint:
@@ -61,7 +61,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: test
+    needs: test-model  # Make sure to reference the correct job
     steps:
       - name: Deploy
         run: echo "Deployment completed!"
