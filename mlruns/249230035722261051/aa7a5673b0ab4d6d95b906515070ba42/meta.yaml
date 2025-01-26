@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pranavreddy/Desktop/MLOps/mlruns/249230035722261051/aa7a5673b0ab4d6d95b906515070ba42/artifacts
+end_time: 1737913012074
+entry_point_name: ''
+experiment_id: '249230035722261051'
+lifecycle_stage: active
+run_id: aa7a5673b0ab4d6d95b906515070ba42
+run_name: AdaBoost
+run_uuid: aa7a5673b0ab4d6d95b906515070ba42
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737913007756
+status: 3
+tags: []
+user_id: pranavreddy
