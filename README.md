@@ -39,10 +39,12 @@ MLOps_Foundations/
 
 ## Getting Started
 ### Prerequisites
+```
 1. Python (>=3.8)
 2. Git
 3. Docker (optional but recommended for containerization)
 4. Basic understanding of machine learning and MLOps concepts
+```
 ### Clone the Repository
 ```
 git clone https://github.com/pranavreddie/MLOps_Foundations.git
@@ -77,10 +79,10 @@ docker run -it -p 8080:8080 mlops-foundations
 ### Additional Details on Models and Flask Application
 #### Models Tried and Best Model
 The project explored various machine learning models, including:
-1. **Linear Regression**: Baseline model for comparison.
-2. **Random Forest**: Provided significant improvements in accuracy and interpretability.
-3. **Gradient Boosting**: Achieved the best performance with optimized hyperparameters.
-The best model, Gradient Boosting, was saved as a serialized file (`model.pkl`) for deployment.
+1. **Random Forest Classifier‎**: Baseline model for comparison.
+2. **Gradient Boosting**: Provided significant improvements in accuracy and interpretability.
+3. **Ada Boost Classifier**: Achieved the best performance with optimized hyperparameters.
+The best model, Ada Boost Classifier, was saved as a serialized file (`model.pkl`) for deployment.
 #### Flask Application
 A Flask application was developed to serve the trained model. The key features of the Flask app
 include:
@@ -113,10 +115,6 @@ pytest tests/
 - Include tests for any new features.
 ---
 ## Contact
-For questions or support, please open an issue on the GitHub repository or contact the maintainer at
-[pranavreddie@example.com](mailto:pranavreddie@example.com).
+For questions or support, please open an issue on the GitHub repository or contact the project team members.
 
 ---
-## Acknowledgments
-Special thanks to contributors and the open-source community for their support and inspiration.
-
