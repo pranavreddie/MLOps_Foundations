@@ -1,4 +1,10 @@
-# MLOps_Foundations
+# MLOPS Assignment-1
+## Team Members
+1. Amrita Chaudri (2023aa05132@wilp.bits-pilani.ac.in)
+2. Arindam Sudhinkumar Ray (2023aa05722@wilp.bits-pilani.ac.in)
+3. Bayana Narasimha Vara Pranav Reddy (2023aa05717@wilp.bits-pilani.ac.in)
+4. Sudheesh K (2023aa05503@wilp.bits-pilani.ac.in)
+
 ## Project Overview
 
 This project, hosted on GitHub at [MLOps_Foundations](https://github.com/pranavreddie/MLOps_Foundations/tree/main), aims to
@@ -40,8 +46,8 @@ MLOps_Foundations/
 ### Clone the Repository
 ```
 git clone https://github.com/pranavreddie/MLOps_Foundations.git
-```
 cd MLOps_Foundations
+```
 ---
 ## Installation
 ### Virtual Environment Setup
