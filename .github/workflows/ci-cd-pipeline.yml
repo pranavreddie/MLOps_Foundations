@@ -68,7 +68,7 @@ jobs:
         run: docker build -t mlops_deploy .
       - name: Push Docker image
         run: |
-          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u pranavreddy08 --dckr_pat_tPirHLhinnT2CCWaooETwOzoCmo-stdin
+          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u pranavreddy08 dckr_pat_tPirHLhinnT2CCWaooETwOzoCmo -stdin
           docker tag mlops_deploy pranavreddy08/mlops_deploy:latest
           docker push pranavreddy08/mlops_deploy:latest
 
