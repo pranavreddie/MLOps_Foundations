@@ -91,6 +91,8 @@ for model_name, model in models.items():
 
 # After selecting the best model, perform hyperparameter tuning on it (Step 2)
 if best_model_name:
+    model_name = best_model_name+"_tuned_model"
+    mlflow.start_run(run_name=model_name)
     print(f"Best model: {best_model_name} with accuracy: {best_accuracy:.4f}")
 
     # Hyperparameter Grid for GridSearchCV (tuning for the best model)
