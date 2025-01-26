@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pranavreddy/Desktop/MLOps/mlruns/249230035722261051/d4572b0fdb494f28876c5b24128738bd/artifacts
+end_time: 1737826984373
+entry_point_name: ''
+experiment_id: '249230035722261051'
+lifecycle_stage: active
+run_id: d4572b0fdb494f28876c5b24128738bd
+run_name: RandomForest
+run_uuid: d4572b0fdb494f28876c5b24128738bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737826976008
+status: 3
+tags: []
+user_id: pranavreddy

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pranavreddy/Desktop/MLOps/mlruns/249230035722261051/f3721f3f180442f8898113c5da1d6bce/artifacts
+end_time: 1737827003173
+entry_point_name: ''
+experiment_id: '249230035722261051'
+lifecycle_stage: active
+run_id: f3721f3f180442f8898113c5da1d6bce
+run_name: tasteful-wolf-984
+run_uuid: f3721f3f180442f8898113c5da1d6bce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737826999253
+status: 3
+tags: []
+user_id: pranavreddy
