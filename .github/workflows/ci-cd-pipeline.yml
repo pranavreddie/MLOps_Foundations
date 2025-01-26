@@ -64,13 +64,18 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - name: Reading the version
+        run: |
+          version=$(cat versions.txt)
+          new_version=$(echo $version | awk -F. '{print $1 "." $2 "." $3+1}')
+          echo $new_version > version.txt
       - name: Build Docker image
         run: docker build -t mlops_deploy .
       - name: Push Docker image
         run: |
           echo "dckr_pat_tPirHLhinnT2CCWaooETwOzoCmo" | docker login -u pranavreddy08 --password-stdin
-          docker tag mlops_deploy pranavreddy08/mlops_deploy:latest
-          docker push pranavreddy08/mlops_deploy:latest
+          docker tag mlops_deploy pranavreddy08/mlops_deploy:$new_version
+          docker push pranavreddy08/mlops_deploy:$new_version
 
   deploy:
     needs: docker
@@ -78,4 +83,5 @@ jobs:
     steps:
       - name: Deploy to Production
         run: |
-            ssh root@127.0.0.1 'docker pull pranavreddy08/mlops_deploy:latest && docker run -d -p 8080:8080 pranavreddy08/mlops_deploy:latest'
+          ssh-keyscan -H 127.0.0.1 >> ~/.ssh/known_hosts          
+          ssh root@127.0.0.1 'docker pull pranavreddy08/mlops_deploy:$new_version && docker run -d -p 8080:8080 pranavreddy08/mlops_deploy:$new_version'
